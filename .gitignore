@@ -1,0 +1,16 @@
+# Configuració local
+.env
+.env.local
+
+# Dependències
+/vendor/
+/node_modules/
+
+# Fitxers temporals
+*.log
+.DS_Store
+Thumbs.db
+
+# Configuració d'editors
+.idea/
+.vscode/

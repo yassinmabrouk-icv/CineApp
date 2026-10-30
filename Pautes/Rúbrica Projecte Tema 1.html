@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rúbrica Projecte Tema 1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="rúbrica-davaluació--projecte-final-cineapp">Rúbrica d'avaluació — Projecte final CineApp</h1>
+<p>El projecte s'avaluarà sobre <strong>10 punts</strong>.</p>
+<p>La rúbrica permet valorar els diferents aspectes del projecte i ajudar l'alumnat a entendre què s'espera del desenvolupament.</p>
+<p>La qualificació final serà la suma dels punts obtinguts en cadascun dels criteris.</p>
+<table>
+<thead>
+<tr>
+<th>Criteri</th>
+<th style="text-align:right">Punts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. PHP, funcions, arrays i validació</td>
+<td style="text-align:right"><strong>1,00</strong></td>
+</tr>
+<tr>
+<td>2. Formularis, GET i POST</td>
+<td style="text-align:right"><strong>1,00</strong></td>
+</tr>
+<tr>
+<td>3. Autenticació i sessions</td>
+<td style="text-align:right"><strong>1,25</strong></td>
+</tr>
+<tr>
+<td>4. Cookies i preferits</td>
+<td style="text-align:right"><strong>1,25</strong></td>
+</tr>
+<tr>
+<td>5. Arquitectura MVC</td>
+<td style="text-align:right"><strong>1,00</strong></td>
+</tr>
+<tr>
+<td>6. Funcionalitats de l'aplicació i CRUD</td>
+<td style="text-align:right"><strong>1,50</strong></td>
+</tr>
+<tr>
+<td>7. Base de dades, MySQLi i DAO</td>
+<td style="text-align:right"><strong>1,00</strong></td>
+</tr>
+<tr>
+<td>8. Qualitat i integració del projecte</td>
+<td style="text-align:right"><strong>2,00</strong></td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td style="text-align:right"><strong>10,00</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="1-php-funcions-arrays-i-validació--1-punt">1. PHP, funcions, arrays i validació — 1 punt</h2>
+<p>Es valorarà la utilització correcta dels conceptes bàsics de PHP treballats durant el tema.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>ús correcte de variables i arrays;</li>
+<li>creació i utilització de funcions;</li>
+<li>tractament de les dades;</li>
+<li>ús de les estructures de control;</li>
+<li>validació de les dades;</li>
+<li>utilització de <code>preg_match()</code> quan sigui necessari;</li>
+<li>reutilització de codi.</li>
+</ul>
+<p>La puntuació serà proporcional al grau de correcció i domini demostrat.</p>
+<hr>
+<h2 id="2-formularis-get-i-post--1-punt">2. Formularis, GET i POST — 1 punt</h2>
+<p>Es valorarà la correcta implementació i gestió dels formularis de l'aplicació.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>creació dels formularis;</li>
+<li>recuperació correcta de les dades;</li>
+<li>ús adequat de <code>$_GET</code> i <code>$_POST</code>;</li>
+<li>diferència entre dades enviades per GET i POST;</li>
+<li>validació i tractament de les dades rebudes;</li>
+<li>flux correcte entre formulari i controlador.</li>
+</ul>
+<hr>
+<h2 id="3-autenticació-i-sessions--125-punts">3. Autenticació i sessions — 1,25 punts</h2>
+<p>Es valorarà el funcionament del sistema d'autenticació i la gestió de sessions.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>funcionament correcte del login;</li>
+<li>creació i utilització de <code>$_SESSION['userName']</code>;</li>
+<li>comprovació de l'autenticació;</li>
+<li>protecció de les funcionalitats;</li>
+<li>redireccions;</li>
+<li>tancament de sessió;</li>
+<li>gestió correcta de situacions d'error.</li>
+</ul>
+<p>També es valorarà que el control d'accés es faci des dels controladors i no únicament ocultant opcions a les vistes.</p>
+<hr>
+<h2 id="4-cookies-i-preferits--125-punts">4. Cookies i preferits — 1,25 punts</h2>
+<p>Es valorarà la correcta utilització de cookies dins de l'aplicació.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>funcionament de la cookie <strong>«Recordar usuari»</strong>;</li>
+<li>creació, lectura i eliminació de cookies;</li>
+<li>gestió dels preferits;</li>
+<li>utilització de <code>serialize()</code> i <code>unserialize()</code>;</li>
+<li>conversió correcta entre cookie i array;</li>
+<li>evitar duplicats en els preferits;</li>
+<li>afegir i eliminar pel·lícules dels preferits;</li>
+<li>mostrar correctament la llista de preferits.</li>
+</ul>
+<hr>
+<h2 id="5-arquitectura-mvc--1-punt">5. Arquitectura MVC — 1 punt</h2>
+<p>Es valorarà que l'aplicació mantingui correctament separades les responsabilitats del <strong>Model, la Vista i el Controlador</strong>.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>estructura general del projecte;</li>
+<li>responsabilitats dels controladors;</li>
+<li>responsabilitats de les vistes;</li>
+<li>separació de l'accés a dades;</li>
+<li>utilització de Business/DTO;</li>
+<li>utilització dels DAO;</li>
+<li>comunicació correcta entre les diferents capes.</li>
+</ul>
+<p>No es valorarà únicament que els fitxers estiguin col·locats en directoris diferents, sinó que <strong>les responsabilitats estiguin realment separades</strong>.</p>
+<hr>
+<h2 id="6-funcionalitats-de-laplicació-i-crud--150-punts">6. Funcionalitats de l'aplicació i CRUD — 1,50 punts</h2>
+<p>Es valorarà el funcionament global de les funcionalitats sol·licitades.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>llistat de pel·lícules;</li>
+<li>consulta del detall;</li>
+<li>cerca;</li>
+<li>inserció;</li>
+<li>modificació;</li>
+<li>eliminació;</li>
+<li>gestió dels gèneres;</li>
+<li>selecció del gènere;</li>
+<li>gestió de les dates;</li>
+<li>navegació entre les diferents funcionalitats;</li>
+<li>gestió adequada dels casos en què una dada no existeix.</li>
+</ul>
+<p>No es valorarà només que cada funcionalitat funcioni de manera aïllada, sinó que estigui correctament integrada dins de l'aplicació.</p>
+<hr>
+<h2 id="7-base-de-dades-mysqli-i-dao--1-punt">7. Base de dades, MySQLi i DAO — 1 punt</h2>
+<p>Es valorarà la correcta utilització de la base de dades i l'accés a les dades des de PHP.</p>
+<p>Es tindrà en compte:</p>
+<ul>
+<li>connexió correcta amb MySQL;</li>
+<li>utilització de MySQLi;</li>
+<li>funcionament dels DAO;</li>
+<li>utilització de les consultes necessàries;</li>
+<li>utilització del <code>JOIN</code> entre pel·lícules i gèneres;</li>
+<li>relació correcta entre les dades de l'aplicació i la base de dades;</li>
+<li>herència dels DAO respecte de <code>db</code>.</li>
+</ul>
+<p>La base de dades tindrà un pes menor que els aspectes relacionats amb el desenvolupament PHP.</p>
+<hr>
+<h2 id="8-qualitat-i-integració-del-projecte--2-punts">8. Qualitat i integració del projecte — 2 punts</h2>
+<p>Es valorarà la qualitat global de l'aplicació i la correcta integració de tots els continguts treballats.</p>
+<p>Es tindrà en compte especialment:</p>
+<ul>
+<li>claredat i coherència del codi;</li>
+<li>organització del projecte;</li>
+<li>reutilització de codi;</li>
+<li>coherència de la navegació;</li>
+<li>gestió dels errors;</li>
+<li>utilització adequada dels elements comuns, com <code>header.php</code> i <code>footer.php</code>;</li>
+<li>coherència entre les diferents funcionalitats;</li>
+<li>correcta integració de PHP, formularis, sessions, cookies, MVC i base de dades;</li>
+<li>robustesa de l'aplicació davant situacions no previstes;</li>
+<li>qualitat general del resultat.</li>
+</ul>
+<p>Aquest apartat permet valorar el projecte <strong>com un conjunt</strong>, més enllà de comprovar individualment si cada funcionalitat sol·licitada funciona.</p>
+
+</body>
+</html>
